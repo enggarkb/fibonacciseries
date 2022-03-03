@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet"/>
+</head>
+<!-- To include the javascript file which has implementation of fibonacci series function -->
+<script type="text/javascript" src="fib.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.6/chai.js" integrity="sha512-PvEZ0yuGDPXjFnOsHTg3kBsqUz68gczLETPFrjeyq74WEcNR10uAvltrSgXHEOHyj5L1P2CV7/2vaU5qe0xS1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+  <h1> What is Fibonacci sequence/series?</h1>
+  <pre >
+          In mathematics, the Fibonacci numbers, commonly denoted Fₙ, form a sequence,
+          the Fibonacci sequence, in which each number is the sum of the two preceding ones.
+          The sequence commonly starts from 0 and 1, although some authors omit the initial
+          terms and start the sequence from 1 and 1 or from 1 and 2.
+  </pre>
+  <img src="MOC_GIFO_Fibonacci-Sequence.gif" width="300" height="300"/> <br><br><br>
+How many of fibonacci numbers you require?
+<input type="number" id="fibnumber" ></input>
+<!-- This is a paragraph tag which will be used to show the final fibonacci series  -->
+<p id="series"></p>
+<!-- The Generate button will get the value from textbox with 'fibnumber' and pass to the generate_Fibonacci function -->
+<button onclick="generate_Fibonacci(document.getElementById('fibnumber').value)" > Generate </button>
+<br>
+<br>
+<br>
+
+<button onclick="To_reload()" > Reload Page</button>
+</body>
+</html>
